@@ -17,6 +17,11 @@ packages:
   gitUrl: https://github.com/Bharath-Meka-0058MR744
   gitUsername: Bharath-Meka-0058MR744
   gitBranch: main
+- name: webServicesRepo
+  gitServerName: DacherCustomerRepo
+  gitUrl: https://github.com/Bharath-Meka-0058MR744
+  gitUsername: Bharath-Meka-0058MR744
+  gitBranch: main
 configurationVariables:
   jdbc.jdbcTestPool.waitingThread: "0"
   jdbc.jdbcTestPool.minConns: "0"
