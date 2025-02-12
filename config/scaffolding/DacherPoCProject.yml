@@ -26,7 +26,7 @@ packages:
   gitUsername: Bharath-Meka-0058MR744
   gitBranch: main
 services:
-- serviceName: project.dacherpoc.integrations:es_loadingProcessOfDamagedPackages
+- serviceName: project.dacherpoc.integrations:sftpCheck
   packages:
   - name: DacherPoCProject
     version: "1.0"
@@ -36,6 +36,10 @@ services:
     version: "1.2"
   - name: smtprepo
     version: "1.1"
+- serviceName: com.dachser:readFileList
+  packages:
+  - name: sftprepo
+    version: "1.2"
 - serviceName: pub.flow:debugLog
   packages:
   - name: WmPublic
@@ -44,10 +48,6 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.1
-- serviceName: com.dachser:readFileList
-  packages:
-  - name: sftprepo
-    version: "1.2"
 - serviceName: pub.client.sftp:login
   packages:
   - name: WmPublic
@@ -61,78 +61,6 @@ services:
   - name: WmPublic
     version: 11.1.0.0.1
 - serviceName: pub.client.sftp:logout
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.1
-- serviceName: com.dachser:getFile
-  packages:
-  - name: sftprepo
-    version: "1.2"
-- serviceName: pub.client.sftp:get
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.1
-- serviceName: pub.io:streamToBytes
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.1
-- serviceName: pub.string:substring
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.1
-- serviceName: pub.string:length
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.1
-- serviceName: pub.math:subtractInts
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.1
-- serviceName: com.dachser:invokeWebservice
-  packages:
-  - name: webServicesRepo
-    version: "1.2"
-- serviceName: com.dachser.demoservice.consumer.demoservice_.connectors:demoservice_PortType_processImage
-  packages:
-  - name: webServicesRepo
-    version: "1.2"
-- serviceName: pub.client:soapClient
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.1
-- serviceName: com.dachser.demoservice.provider:processImage
-  packages:
-  - name: webServicesRepo
-    version: "1.2"
-- serviceName: pub.math:randomDouble
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.1
-- serviceName: pub.math:multiplyFloats
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.1
-- serviceName: pub.math:roundNumber
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.1
-- serviceName: com.dachser:processException
-  packages:
-  - name: smtprepo
-    version: "1.1"
-- serviceName: pub.client:smtp
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.1
-- serviceName: com.dachser:moveFile
-  packages:
-  - name: sftprepo
-    version: "1.2"
-- serviceName: pub.client.sftp:rename
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.1
-- serviceName: pub.flow:getLastFailureCaught
   packages:
   - name: WmPublic
     version: 11.1.0.0.1
