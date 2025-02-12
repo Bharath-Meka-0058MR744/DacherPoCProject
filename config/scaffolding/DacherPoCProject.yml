@@ -64,18 +64,6 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.1
-- serviceName: pub.string:substring
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.1
-- serviceName: pub.string:length
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.1
-- serviceName: pub.math:subtractInts
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.1
 - serviceName: com.dachser:getFile
   packages:
   - name: sftprepo
@@ -85,6 +73,18 @@ services:
   - name: WmPublic
     version: 11.1.0.0.1
 - serviceName: pub.io:streamToBytes
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
+- serviceName: pub.string:substring
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
+- serviceName: pub.string:length
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
+- serviceName: pub.math:subtractInts
   packages:
   - name: WmPublic
     version: 11.1.0.0.1
