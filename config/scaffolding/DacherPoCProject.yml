@@ -8,32 +8,146 @@ packages:
   gitUsername: Bharath-Meka-0058MR744
   gitBranch: main
 - name: sftprepo
+  version: "1.2"
   gitServerName: DacherCustomerRepo
   gitUrl: https://github.com/Bharath-Meka-0058MR744
   gitUsername: Bharath-Meka-0058MR744
   gitBranch: main
 - name: smtprepo
+  version: "1.1"
   gitServerName: DacherCustomerRepo
   gitUrl: https://github.com/Bharath-Meka-0058MR744
   gitUsername: Bharath-Meka-0058MR744
   gitBranch: main
 - name: webServicesRepo
+  version: "1.2"
   gitServerName: DacherCustomerRepo
   gitUrl: https://github.com/Bharath-Meka-0058MR744
   gitUsername: Bharath-Meka-0058MR744
   gitBranch: main
+services:
+- serviceName: project.dacherpoc.integrations:es_loadingProcessOfDamagedPackages
+  packages:
+  - name: DacherPoCProject
+    version: "1.0"
+  - name: sftprepo
+    version: "1.2"
+  - name: webServicesRepo
+    version: "1.2"
+  - name: smtprepo
+    version: "1.1"
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
+- serviceName: pub.flow:setCustomContextID
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
+- serviceName: com.dachser:readFileList
+  packages:
+  - name: sftprepo
+    version: "1.2"
+- serviceName: pub.client.sftp:login
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
+- serviceName: pub.client.sftp:ls
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
+- serviceName: pub.list:sizeOfList
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
+- serviceName: pub.client.sftp:logout
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
+- serviceName: pub.string:substring
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
+- serviceName: pub.string:length
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
+- serviceName: pub.math:subtractInts
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
+- serviceName: com.dachser:getFile
+  packages:
+  - name: sftprepo
+    version: "1.2"
+- serviceName: pub.client.sftp:get
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
+- serviceName: pub.io:streamToBytes
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
+- serviceName: com.dachser:invokeWebservice
+  packages:
+  - name: webServicesRepo
+    version: "1.2"
+- serviceName: com.dachser.demoservice.consumer.demoservice_.connectors:demoservice_PortType_processImage
+  packages:
+  - name: webServicesRepo
+    version: "1.2"
+- serviceName: pub.client:soapClient
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
+- serviceName: com.dachser.demoservice.provider:processImage
+  packages:
+  - name: webServicesRepo
+    version: "1.2"
+- serviceName: pub.math:randomDouble
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
+- serviceName: pub.math:multiplyFloats
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
+- serviceName: pub.math:roundNumber
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
+- serviceName: com.dachser:processException
+  packages:
+  - name: smtprepo
+    version: "1.1"
+- serviceName: pub.client:smtp
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
+- serviceName: com.dachser:moveFile
+  packages:
+  - name: sftprepo
+    version: "1.2"
+- serviceName: pub.client.sftp:rename
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
+- serviceName: pub.flow:getLastFailureCaught
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
 configurationVariables:
   jdbc.jdbcTestPool.waitingThread: "0"
   jdbc.jdbcTestPool.minConns: "0"
-  jdbc.jdbcTestPool.snoopenabled: "false"
   jdbc.jdbcTestPool.expireTime: "60000"
   jdbc.jdbcTestPool.snoopparms: ddtdbg.ProtocolTraceEnable=true;ddtdbg.ProtocolTraceMaxline=16;ddtdbg.ProtocolTraceLocation=logs/snoop/jdbcTestPool.log;ddtdbg.ProtocolTraceShowTime=true
+  jdbc.jdbcTestPool.maxConns: "10"
+  jdbc.jdbcTestPool.userid: root
+  jdbc.jdbcTestPool.driverAlias: MySQL Database Java Connector Driver
+  jdbc.jdbcTestPool.spyenabled: "false"
+  jdbc.jdbcTestPool.snoopenabled: "false"
   jdbc.jdbcTestPool.password: "{AES}er+I3U8nDVm8F4DBRST1+A=="
   jdbc.jdbcTestPool.spyparms: SpyAttributes=(log=(file)logs/spy/jdbcTestPool.log;logTName=yes;timestamp=yes)
   jdbc.jdbcTestPool.dbURL: jdbc:mysql://mysql.test.local:3306/webm
   jdbc.jdbcTestPool.poolThreshold: "0"
-  jdbc.jdbcTestPool.maxConns: "10"
-  jdbc.jdbcTestPool.userid: root
-  jdbc.jdbcTestPool.driverAlias: MySQL Database Java Connector Driver
   jdbc.jdbcTestPool.useSSL: "false"
-  jdbc.jdbcTestPool.spyenabled: "false"
