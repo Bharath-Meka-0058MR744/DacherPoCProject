@@ -63,7 +63,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">bhm</value>
-    <value name="lastModifiedDate">1739377302025</value>
+    <value name="lastModifiedDate">1739377821562</value>
     <value name="displayName">es_loadingProcessOfDamagedPackages</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -136,6 +136,8 @@
         </record>
         <null name="outputMapSet"/>
         <null name="mapSet"/>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">2.0</value>
       </record>
       <record name="/2/1" javaclass="com.wm.util.Values">
         <value name="name">REPEAT</value>
@@ -956,6 +958,8 @@
         </record>
         <null name="outputMapSet"/>
         <null name="mapSet"/>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">2.1.1.0.2.0.1.0.3.0.2</value>
       </record>
       <record name="/2/1/1/0/2/0/1/0/3/0/3" javaclass="com.wm.util.Values">
         <null name="name"/>
@@ -973,6 +977,8 @@
         </record>
         <null name="outputMapSet"/>
         <null name="mapSet"/>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">2.1.1.0.2.0.1.0.3.0.3</value>
       </record>
       <record name="/2/1/1/0/2/0/1/0/3/0/4" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
@@ -1083,6 +1089,8 @@
         </record>
         <null name="outputMapSet"/>
         <null name="mapSet"/>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">2.1.1.0.2.0.1.0.3.0.6.0.1</value>
       </record>
       <record name="/2/1/1/0/2/0/1/0/3/0/7" javaclass="com.wm.util.Values">
         <null name="name"/>
@@ -1100,6 +1108,8 @@
         </record>
         <null name="outputMapSet"/>
         <null name="mapSet"/>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">2.1.1.0.2.0.1.0.3.0.7</value>
       </record>
       <record name="/2/1/1/0/2/0/1/0/3/0/8" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
@@ -1185,6 +1195,8 @@
         </record>
         <null name="outputMapSet"/>
         <null name="mapSet"/>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">2.1.1.0.3.0.1</value>
       </record>
       <record name="/3" javaclass="com.wm.util.Values">
         <value name="name">CATCH</value>
@@ -1253,6 +1265,8 @@
         </record>
         <null name="outputMapSet"/>
         <null name="mapSet"/>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">3.2</value>
       </record>
       <record name="/3/3" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
