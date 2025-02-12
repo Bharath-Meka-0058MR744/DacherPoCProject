@@ -9,17 +9,18 @@
   <null name="replication_services"/>
   <record name="requires" javaclass="com.wm.util.Values">
     <value name="sftprepo">1.2</value>
+    <value name="smtprepo">1.1</value>
   </record>
   <null name="listACL"/>
   <value name="webappLoad">yes</value>
   <value name="reloadWithDependentPackage">yes</value>
-  <value name="build">2</value>
+  <value name="build">3</value>
   <null name="description"/>
   <value name="created_date">12-02-2025 10:54:15 GMT</value>
   <null name="extendedProperties"/>
   <null name="target_server_version"/>
   <value name="isProjectPackage">true</value>
-  <value name="lastUpdated">2025-02-12T13:19:11.164865544Z</value>
+  <value name="lastUpdated">2025-02-12T13:19:49.224775852Z</value>
   <value name="wmProjectId">flcad5da4b20c99980b5a146</value>
   <value name="creator">Bharath Meka</value>
 </Values>
