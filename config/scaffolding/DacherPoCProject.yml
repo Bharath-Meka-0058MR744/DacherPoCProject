@@ -44,7 +44,7 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.1
-- serviceName: com.dachser:moveFile
+- serviceName: com.dachser:readFileList
   packages:
   - name: sftprepo
     version: "1.2"
@@ -52,7 +52,11 @@ services:
   packages:
   - name: WmPublic
     version: 11.1.0.0.1
-- serviceName: pub.client.sftp:rename
+- serviceName: pub.client.sftp:ls
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
+- serviceName: pub.list:sizeOfList
   packages:
   - name: WmPublic
     version: 11.1.0.0.1
@@ -117,6 +121,14 @@ services:
   - name: smtprepo
     version: "1.1"
 - serviceName: pub.client:smtp
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.1
+- serviceName: com.dachser:moveFile
+  packages:
+  - name: sftprepo
+    version: "1.2"
+- serviceName: pub.client.sftp:rename
   packages:
   - name: WmPublic
     version: 11.1.0.0.1
